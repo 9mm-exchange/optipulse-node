@@ -1,24 +1,24 @@
-# Unichain Node
+# OptiPulse Node
 
 ![image](logo.png)
 
-This repository contains the relevant configuration to run your own node on the Unichain network.
+This repository contains the relevant configuration to run your own node on the OptiPulse network.
 
 ### Troubleshooting
 
-If you encounter problems with your node, please open a [GitHub issue](https://github.com/Uniswap/unichain-node/issues)
+If you encounter problems with your node, please open a [GitHub issue](https://github.com/9mm-exchange/optipulse-node/issues)
 
 ### Supported Networks
 
 | Network      | Status |
 |-------------------| ------ |
-| Mainnet | ✅     |
-| Testnet (Sepolia) | ✅     |
+| Mainnet |   soon  |
+| Testnet (Pulse) | ✅     |
 
 
 ### Usage
 
-1. Ensure you have an Ethereum L1 full node RPC available, and set `OP_NODE_L1_ETH_RPC` & `OP_NODE_L1_BEACON` (in the `.env.mainnet` file). If running your own L1 node, it needs to be synced before Unichain will be able to fully sync.
+1. Ensure you have an Ethereum L1 full node RPC available, and set `OP_NODE_L1_ETH_RPC` & `OP_NODE_L1_BEACON` (in the `.env.mainnet` file). If running your own L1 node, it needs to be synced before Optipulse will be able to fully sync.
 2. Select your network in the docker compose file by uncommenting .env.sepolia or .env.mainnet in both op-node and the execution client.
 3. Run:
 
@@ -26,7 +26,7 @@ If you encounter problems with your node, please open a [GitHub issue](https://g
 docker compose up -d
 ```
 
-4. You should now be able to `curl` your Unichain node:
+4. You should now be able to `curl` your Optipulse node:
 
 ```
 curl -d '{"id":1,"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest",false]}' \
