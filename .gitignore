@@ -1,0 +1,3 @@
+# Ignore opnode and geth data directories
+opnode-data/
+geth-data/
